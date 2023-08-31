@@ -1,0 +1,21 @@
+{
+  "name": "blogteam-be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cloudinary": "^1.40.0",
+    "cloudinary-core": "^2.13.0",
+    "core-js": "^3.32.1",
+    "lodash": "^4.17.21",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
