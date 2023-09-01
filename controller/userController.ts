@@ -26,17 +26,11 @@ export const registerUser = async (
       avatarID: public_id,
     });
 
-   
-
-    // user.friends?.push(user.id)
-    // user.save();
-
-
     if (user.friends?.includes(user.id)) {
       return res.status(HTTP.OK).json({
         message: "Already friends",
       });
-      
+
     } else {
       user.friends?.push(user.id);
       user.save();

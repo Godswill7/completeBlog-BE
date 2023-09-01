@@ -10,8 +10,10 @@ interface iUser {
   request?: string[];
   articles?: {}[];
   category?: [];
-  followers?: string[];
   following?: string[];
+  followers?: string[];
+  likes?: string[];
+  // liker?: string;
 }
 
 interface iUserData extends iUser, mongoose.Document {}
@@ -53,9 +55,15 @@ const userModel = new mongoose.Schema<iUser>(
     followers: {
       type: Array<String>,
     },
+   likes: {
+      type: Array<String>,
+    },
     following: {
       type: Array<String>,
     },
+    // liker: {
+    //   type: String,
+    // },
   },
   { timestamps: true }
 );

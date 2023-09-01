@@ -11,6 +11,7 @@ import rating from "./router/RatingRouter";
 import admin from "./router/adminRouter"
 import ads from "./router/adRouter"
 import follow from "./router/followRouter"
+import like from "./router/likeRouter"
 
 import comment from "./router/commentRouter";
 
@@ -40,6 +41,7 @@ export const mainApp = (app: Application) => {
     app.use("/api/v1", ads);
     app.use("/api/v1", comment);
     app.use("/api/v1", follow);
+    app.use("/api/v1", like);
     
 
     app.all("*", (req : Request, res :Response, next: NextFunction) => {
